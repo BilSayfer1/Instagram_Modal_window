@@ -1,0 +1,354 @@
+* {
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+header {
+    height: 56px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+
+    .logo {
+        width: 115px;
+        height: 32px;
+    }
+
+    .icons {
+        display: flex;
+        gap: 10px;
+
+        img {
+            width: 24px;
+            height: 24px;
+
+        }
+    }
+
+    .inputContainer {
+        position: relative;
+        display: inline-block;
+    }
+
+    .inpSearch {
+        width: 250px;
+        height: 32px;
+        background: #FAFAFA;
+        border: 1px solid #DBDBDB;
+        border-radius: 2px;
+        padding-left: 35px;
+    }
+
+    .searchIcon {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+.sect {
+    margin: 20px 140px;
+    display: flex;
+
+    .check {
+        width: 650px;
+        overflow: scroll;
+        height: 100px;
+        border-radius: 2px;
+        border: 1px;
+        background-color: rgb(241, 241, 241);
+        border: 1px solid #DBDBDB;
+        overflow: hidden;
+
+        .main_Box {
+            padding-right: 100px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+            text-align: center;
+
+            .item {
+                padding-top: 10px;
+                padding-left: 10px;
+            }
+
+            .btnMain {
+                z-index: 1;
+                height: 13px;
+            }
+        }
+    }
+}
+
+.tuda_suda {
+    color: white;
+    background-color: rgba(255, 255, 255, 0);
+    margin-left: 590px;
+    margin-right: 30px;
+    margin-top: 25px;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: absolute;
+}
+
+.header_main {
+    margin-left: 140px;
+    margin-top: 25px;
+    width: 650px;
+    height: 980px;
+    border-radius: 2px;
+    border: 1px solid #DBDBDB;
+}
+
+.glav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left,
+.right {
+    padding: 10px 20px;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+}
+main {
+    display: flex;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 70%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 400px;
+    height: 80px;
+    border: 1px solid rgb(124, 124, 124);
+    border-radius: 5px;
+
+    span {
+        padding-left: 10px;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    nav {
+        padding-left: 10px;
+        padding-top: 10px;
+        font-size: 14px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+
+.modal-left,
+.modal-right {
+    flex: 1;
+    margin: 10px;
+}
+
+.modal-left img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-right {
+    overflow-y: auto;
+    max-height: 400px; 
+}
+.modal-right .glav {
+    display: flex;
+    flex-direction: column; /* Make items stack vertically */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.vozle {
+    margin-top: 15px;
+    margin-left: -430px;
+
+}
+
+.main_img img {
+    max-width: 100%;
+    width: 748px;
+    height: 600px;
+
+}
+
+.left_img img {
+    padding-left: 5px;
+    margin-top: 5px;
+    width: 30px;
+    height: 30px;
+    gap: 10px;
+}
+
+
+.right_img img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.other {
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    width: 650px;
+    height: 40px;
+}
+.count_likes {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.comment {
+    margin-top: 10px;
+    padding: 0px 20px;
+}
+.gray {
+    margin-top: 10px;
+    margin-left: 20px;
+    color: gray;
+}
+.linya {
+    width: 650px;
+    height: 2px;
+    background-color: gray;
+    margin-top: 20px;
+}
+.left_footer img {
+    width: 30px;
+    height: 30px;
+}
+.footer {
+    display: flex;
+    padding: 0px 10px;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.add {
+    margin-left: -400px;
+    color: gray;
+}
+.right_footer {
+    align-items: end;
+    button {
+        background-color: white;
+        border: none;
+        cursor: pointer;
+        color: rgb(68, 118, 255);
+
+    }
+}
+button {
+    cursor: pointer;
+}
+.main_sprava {
+    margin-top: -130px;
+    margin-left: 50px;
+    width: 400px;
+    height: 600px;
+}
+.me {
+    display: flex;
+    justify-content: space-between;
+}
+.left_me img {
+width: 40px;
+height: 40px;
+}
+.nick_me {
+    margin-left: -190px;
+
+    h5 {
+        color: gray;
+    }
+}
+.right_me button {
+    color: rgb(23, 85, 255);
+    font-size: 16px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    
+}
+.sugestions {
+    margin-top: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+.left_sugestions {
+    color: gray;
+}
+.item_nick {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_img img {
+    width: 45px;
+    height: 45px;
+}
+.nickname_item {
+    margin-left: -150px;
+    
+    h5 {
+
+        color: gray;
+    }
+}
+.item_btn button {
+    padding-top: 5px;
+    background-color: white;
+    border: none;
+    color: rgb(23, 85, 255);
+
+}
